@@ -1,0 +1,17 @@
+{
+  "name": "wabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.1",
+    "pino": "^8.4.2",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

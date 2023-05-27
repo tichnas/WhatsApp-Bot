@@ -1,0 +1,7 @@
+# Contains your WhatsApp credentials. Change if you changed the folder in Bot configuration
+auth/
+
+# Data file for roles. Change if you changed it in Roles plugin configuration
+roles.json
+
+node_modules/
