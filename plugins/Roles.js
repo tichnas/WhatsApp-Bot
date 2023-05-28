@@ -168,8 +168,13 @@ class Roles {
   async process(key, message) {
     let text = this.#getText(key, message).toLowerCase();
 
-    const rolesData = await fs.readFile(this.#dataFile);
-    const roles = JSON.parse(rolesData);
+    let roles;
+    try {
+      const rolesData = await fs.readFile(this.#dataFile);
+      roles = JSON.parse(rolesData);
+    } catch {
+      roles = [];
+    }
 
     for (let role in roles) {
       if (!text.includes(`@${role}`)) continue;
