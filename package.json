@@ -1,13 +1,20 @@
 {
   "name": "wabot",
+  "author": {
+    "name": "Sanchit Arora",
+    "url": "https://github.com/tichnas"
+  },
   "version": "1.0.0",
-  "description": "",
+  "description": "An extensible WhatsApp Bot with features like tag everyone or create custom roles",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tichnas/WhatsApp-Bot.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.0.1",
