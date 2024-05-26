@@ -173,7 +173,7 @@ class Roles {
       const rolesData = await fs.readFile(this.#dataFile);
       roles = JSON.parse(rolesData);
     } catch {
-      roles = [];
+      roles = {};
     }
 
     for (let role in roles) {
